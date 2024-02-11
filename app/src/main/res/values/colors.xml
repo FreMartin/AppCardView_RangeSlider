@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_color">#9FA8DA</color>
+    <color name="button_color">#5C6BC0</color>
+    <color name="bg_color">#4527A0</color>
+    <color name="normal">#9E9D24</color>
+    <color name="sobrepeso">#F9A825</color>
+    <color name="obesidad1">#FF8F00</color>
+    <color name="obesidad2">#EF6C00</color>
+    <color name="obesidadMorbida">#D84315</color>
+</resources>

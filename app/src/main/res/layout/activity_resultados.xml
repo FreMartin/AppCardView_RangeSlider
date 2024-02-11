@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Resultados"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Tu resultado"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/card_color"
+        app:cardCornerRadius="15dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tvCondicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:text="Condición"
+            android:padding="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tvIMC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="60dp"
+            android:text="45"
+
+            />
+
+        <TextView
+            android:id="@+id/tvDetalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center|bottom"
+            android:textSize="25dp"
+            android:text="Detalles"
+            android:padding="30dp"
+            />
+
+    </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnRecalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/button_color"
+        android:text="Re-calcular"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

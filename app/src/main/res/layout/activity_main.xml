@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/bg_color"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdMasculino"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/card_color"
+            app:cardCornerRadius="15dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_man_24"
+                    app:tint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:paddingBottom="20dp"
+                    android:text="Masculino" />
+
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdFemenino"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/card_color"
+            app:cardCornerRadius="15dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:paddingTop="20dp"
+                    android:src="@drawable/ic_woman_24"
+                    app:tint="@color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:paddingBottom="20dp"
+                    android:text="Femenino" />
+
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/card_color"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 cm"
+            android:textSize="40sp" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/rsAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stepSize = "1"
+            android:valueFrom = "100"
+            android:valueTo = "225"
+            />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/card_color"
+            app:cardCornerRadius="15dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:paddingBottom="20dp"
+                    android:text="Peso"
+                    />
+
+                <TextView
+                    android:id="@+id/tvPeso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="20dp"
+                    android:textSize="40dp"
+                    android:text="60" />
+
+
+
+                    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                        android:id="@+id/btnPesoMenos"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:backgroundTint="@color/button_color"
+                        android:layout_gravity="bottom|start"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="-"
+                        android:textSize="30dp"
+                        />
+
+
+                <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/btnPesoMas"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:backgroundTint="@color/button_color"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="+"
+                    android:textSize="20dp"/>
+
+
+
+
+            </FrameLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/card_color"
+        app:cardCornerRadius="15dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:paddingBottom="20dp"
+                android:text="Edad"
+                />
+
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:textSize="40dp"
+                android:text="20" />
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btnEdadMenos"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/button_color"
+                android:layout_gravity="bottom|start"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="-"
+                android:textSize="30dp"/>
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/btnEdadMas"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/button_color"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="+"
+                android:textSize="20dp"/>
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/button_color"
+        android:text="Calcular"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:cornerRadius="10dp" />
+</LinearLayout>
+        
+        
+
